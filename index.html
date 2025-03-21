@@ -17,7 +17,6 @@
                         <div class="login-container">
                             <div id="loginlogo" class="login-logo">
                                 <img id="logoimage" src="https://campusvirtual.utn.ac.cr/pluginfile.php/1/core_admin/logo/0x200/1739728546/logoutn.png" class="img-fluid" alt="Campus Virtual UTN"/>
-                                <h1 class="login-heading">Entrar a Campus Virtual UTN</h1>
                             </div>
                             
                             <form class="login-form" action="procesar_login.php" method="POST" id="login">
@@ -37,6 +36,14 @@
                             <div class="login-form-forgotpassword mb-3">
                                 <a href="#">¿Olvidó su contraseña?</a>
                             </div>
+                            <div class="login-divider"></div>
+        <h2 class="login-heading">Algunos cursos permiten el acceso de invitados</h2>
+        <form action="https://campusvirtual.utn.ac.cr/login/index.php" method="post" id="guestlogin">
+            <input type="hidden" name="logintoken" value="qbHT0dwiRdZkbhAp5mruC2ZjcDrUl4Qt">
+            <input type="hidden" name="username" value="guest" />
+            <input type="hidden" name="password" value="guest" />
+            <button class="btn btn-secondary" type="submit" id="loginguestbtn">Entrar como persona invitada</button>
+        </form>
                         </div>
                     </div>
                 </div>
